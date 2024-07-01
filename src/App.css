@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.converter-container {
+	width: 500px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input:empty + input {
+	content: none;
+}
+h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+input {
+	outline: none;
+}
+
+.exchange-rates {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.rate {
+	padding: 25px;
+	border: 1px solid #fff;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.conversion-form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.input-group {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-bottom: 5px;
+}
+
+select,
+input {
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
